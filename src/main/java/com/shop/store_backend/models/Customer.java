@@ -1,16 +1,15 @@
 package com.shop.store_backend.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
+@Getter
+@Setter
 @Table(name="customers")
 
 public class Customer {
@@ -20,4 +19,5 @@ public class Customer {
     private String name;
     private String email;
     private String password;
+
 }
